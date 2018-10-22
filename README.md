@@ -1,3 +1,3 @@
 # PythonSnippets
 
-List of usual python snippets that I find useful while leetcoding.
+List of python snippets that I find useful while leetcoding.
