@@ -13,7 +13,7 @@
 import math
 def binarySearch(arr, num):
     start = 0
-    end = len(arr)
+    end = len(arr) - 1 # DONT FORGET THE -1!!!!
     # Need the == check or else we would not check the last case
     while start <= end:
         # In python we dont need floor because integer division.
