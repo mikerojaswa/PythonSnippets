@@ -10,14 +10,11 @@ def selection_sort(arr):
 		for j in range(i + 1, len(arr)):
 			if arr[min_idx] > arr[j]:
 				min_idx = j
-		swap(arr, i, min_idx)
+		arr[i], arr[min_idx] = arr[min_idx], arr[i]
 	
 
 				
-def swap(arr, i, j):
-	temp = arr[i]
-	arr[i] = arr[j]
-	arr[j] = temp
+
 
 selection_sort(arr)
 selection_sort(arr2)
