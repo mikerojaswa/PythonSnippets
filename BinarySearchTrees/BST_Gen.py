@@ -4,11 +4,10 @@ class Node:
 		self.value = value
 		self.left = left
 		self.right = right
+		
 class BST:
 	def __init__ (self):
 		self.root = None
-	
-	
 	
 	def add(self, val):
 		node = Node(val)
@@ -44,9 +43,4 @@ bst.add(9)
 bst.add(1)
 bst.add(4)
 bst.add(7)
-bst.add(11)
-
-root = bst.root
-
-def BFS(root):
-	
+bst.add(11)	
