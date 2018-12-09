@@ -1,7 +1,5 @@
 #Breadth First Search on a graph w/ cycles
 
-
-
 graph = {
 	'A': ['B', 'C'],
 	'B': ['D', 'E', 'B'],
