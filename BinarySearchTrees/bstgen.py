@@ -36,11 +36,3 @@ class BST:
 				current_node.right = node_to_add
 				print(f'Added {node_to_add.value}')
 		
-bst = BST()
-bst.add(6)
-bst.add(3)
-bst.add(9)
-bst.add(1)
-bst.add(4)
-bst.add(7)
-bst.add(11)	
