@@ -4,20 +4,22 @@ graph = {'A': ['B', 'C'],
 			'D': ['B'],
 			'E': ['B', 'F'],
 			'F': ['C', 'E']}
-			
-def dfs_paths(graph, start, goal):
+#shortest path guranteed to be first... easy to bail from.
+def bfs_paths(graph, start, goal):
+	queue = [(start, [start])]
 	paths = []
-	stack = [(start, [start])]
-	while stack:
-		(vertex, path) = stack.pop()
+	while queue:
+		(vertex, path) = queue.pop(0)
 		arr = []
 		for node in graph[vertex]:
 			if node not in path:
 				arr.append(node)
+		
 		for node in arr:
 			if node == goal:
 				paths.append(path + [node])
 			else:
-				stack.append((node, path + [node]))
+				queue.append((node, path + [node]))
 	return paths
-	
+
+
