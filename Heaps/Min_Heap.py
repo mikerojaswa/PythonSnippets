@@ -50,3 +50,4 @@ print(heapq.heappop(tuple_node_arr)) # 5
 print(heapq.heappop(tuple_node_arr)) # 8
 print(heapq.heappop(tuple_node_arr)) # 8
 print(heapq.heappop(tuple_node_arr)) # 9
+print(tuple_node_arr)
