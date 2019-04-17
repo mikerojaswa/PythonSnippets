@@ -1,3 +1,4 @@
+import json
 _end = '_end_'
 
 def make_trie(words):
@@ -9,5 +10,8 @@ def make_trie(words):
 		current_dict[_end] = _end
 	return root
 	
-trie = make_trie(['foo', 'bar', 'baz', 'barz'])
-print(trie)
+trie = make_trie(['foo', 'age'])
+
+print(json.dumps(trie, sort_keys=True, indent=2))
+subtrie = trie['a']
+print(subtrie)
